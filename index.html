@@ -12,20 +12,20 @@
     <header>
         <h1>Weather Dashboard</h1>
     </header>
-<div class="container row">
-  <div class="align-items-start">
-    <section id="search-area" class="col-4-md">
+<div class="container-fluid row">
+  <div class="col-12 col-md-3 search-column">
+    <section id="search-area" class="border-p2">
         <h2>Search for a City:</h2>
-        <textarea placeholder="Enter city name here"></textarea>
-        <button id="search-btn">Search</button>
-        <div class="past-search">
+        <input id="city" type="text" class="form-input" placeholder="Enter a city">
+        <button class="btn btn-primary" type="submit">Search</button>
+        <div class="past-search border">
             <ul class="past-results">
 
             </ul>
         </div>
     </section>
   </div>
-  <div class="align-items-start">
+  <div class="col-12 col-md-9">
     <div class="col-md-8">
     <section class="current-information">
         <div class="now-results">
